@@ -1,13 +1,13 @@
 {
   "name": "I don't want to change eTL password",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "manifest_version": 2,
   "description": "Skip password change page for eTL users who like their current password.",
   "homepage_url": "https://naturale0.github.io",
   
   "content_scripts": [
     {
-      "matches": ["https://idm.snu.ac.kr/imc_change_pwd_form_mysnu.jsp?si_redirect_address=http://etl.snu.ac.kr/"],
+      "matches": ["*://idm.snu.ac.kr/imc_change_pwd_form_mysnu.jsp?si_redirect_address=*"],
       "run_at": "document_start",
       "js": ["inject.js"]
     }
@@ -17,7 +17,7 @@
   },
   "icons": {"48": "images/icon48.png", "128": "images/icon128.png"},
   "permissions": [
-    "https://idm.snu.ac.kr/imc_change_pwd_form_mysnu.jsp?si_redirect_address=http://etl.snu.ac.kr/",
+    "*://idm.snu.ac.kr/imc_change_pwd_form_mysnu.jsp?si_redirect_address=*",
     "tabs"
   ]
 }

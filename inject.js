@@ -1,9 +1,6 @@
-// this is the code which will be injected into a given page...
+// the code which will be injected
 
 (function() {
-
-	// just place a div at top right
-	//goMySnu();
-	document.getElementsByClassName("BT")[2].click();
-
+	window.location.replace('https://etl.snu.ac.kr');
+	//document.getElementsByClassName("BT")[2].click();
 })();

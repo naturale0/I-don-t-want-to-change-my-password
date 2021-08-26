@@ -8,7 +8,7 @@
   "content_scripts": [
     {
       "matches": ["https://idm.snu.ac.kr/imc_change_pwd_form_mysnu.jsp?si_redirect_address=http://etl.snu.ac.kr/"],
-      "run_at": "document_idle",
+      "run_at": "document_start",
       "js": ["inject.js"]
     }
   ],
